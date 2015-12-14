@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <link rel="stylesheet" href="stylesheets/styleEscapeGame.css">
+    <meta charset="utf-8">
+    <title>Adventure</title>
+
+
+  </head>
+  <body>
+
+
+<script>
+
+var direction;
+var direction = prompt("You are in a asylum being chased by a crazed doctor who wants to examine your brain. There are three routes... through the 'vents' to your left, a door leading to the 'courtyard' to your right, or the 'cafeteria' straight ahead. Which way will you go?");
+var vents;
+var vents = prompt("The vents collapsed and find yourself in a dark room. 1. Do you 'turn on the light'? Or 2. 'run through the open door'?");
+
+
+switch (vents) {
+  case "aid the damsel":
+  case "doctor studies":
+  case "fight":
+  case "head":
+  case "ignore them":
+  case "leg":
+  case "locate the library":
+  case "main hall":
+  case "My Name Is by Eminem":
+  case "reason":
+  case "run through the open door":
+  case "Singing in the Rain by Gene Kelly":
+  case "talk your way out of this":
+  case "try to make your escape leaving them in the dust":
+  case "turn on the light":
+  case "unlock cafeteria doors and main hall doors":
+    var cafeteriaDoorsOrLibrary;
+    var controlRoomOpens;
+    var computerScreenPrompt;
+    var doctorStudiesOrMainHall;
+    var helpDamsel;
+    var libraryControlRoom;
+    var fightHim;
+    var followNurse;
+    var reasonWith;
+    var talkingOrRunning;
+    var takingTheSwing;
+    var windowOrLibrary;
+
+
+
+
+
+    if (vents === "turn on the light") {
+      alert("You have discovered a room full of bodies and scream, the doctor heard you! And he is now at the door!");
+      var reasonWith = prompt("Do you 1. try to 'reason' with him and ask why he is doing this? Or 2. beg for him to let you go and 'fight' your way out?");
+    } else if (vents === "run through the open door") {
+      alert("You can't be the only one trying to escape!");
+      var helpDamsel = prompt("You hear a cry for help, do you go 1. 'aid the damsel' in distress? Or 2. 'ignore them?'");
+    }
+    
+    if (helpDamsel === "aid the damsel") {
+      alert("What a poor choice... You fell for his trap, you're the only one that wants to escape! How could you fall for the oldest trick in the book? Well he is now tying you upside down in his office with your brain examination beging to take its process... Game Over");
+    } else if (helpDamsel === "ignore them") {
+      alert("Good choice, you made it to the elevator and are now able to escape him!");
+      var doctorStudiesOrMainHall = prompt("Do you want to go up to the 1. 'doctor studies'? Or 2. down to the 'main hall'?");
+    }
+
+    if (doctorStudiesOrMainHall === "doctor studies") {
+      alert("As witty as it may have sounded to go to the room where the Doctor will be bringing you yourself, it was the wrong choice. The hope that you could hide from the Doctors grasp and maybe even find a way of escape in his office has now led you to something far more worse than what you hoped for...");
+      alert("His fellow nurse's were in his office! They have now swarmed you and forced you onto the operating bed...");
+      alert("With all of your might you have tried to fight them off but all efforts have failed and you are now strapped down and awaiting for his arrival");
+      alert('A nurse has whispered in your ear saying "I am greatly sorry, but if it means anything we are going to put you under so the pain someone normally would endure will not even phase you, please just make this easy for us. We dislike this as much as you do... but sometimes you just have to accept things for what they are..."');
+      alert("Well sadly you have made the wrong choice! And I am sure you can expect what you are about to be told... GAME OVER!");
+    } else if (doctorStudiesOrMainHall === "main hall") {
+      alert("Wise decision! You have now made it to the main hall, you try to open the front door but sadly its locked. You go to the cafeteria doors and they are locked as well, with loud banging behind the doors... Wait! There is a computer that you should probably access...");
+      prompt("The computer is providing you various options... Such as accessing emails, contact listings, patient listings, and the most intriguing one out of the group EMERGENCY OVERRIDE. Type in 'access EMERGENCY OVERRIDE'");
+      var cafeteriaDoorsOrLibrary = prompt("Do you wish to 'unlock cafeteria doors and main hall doors? Beware alarm may go off.' or would you like to 'locate the library' where the control room is and configure door settings there?");
+    }
+
+    if (reasonWith === "reason") {
+      alert("Doctor: Because its what I do for a living! Why must I go through this every single time a patient is sent to me?! Don't you want to be better?!? Ugh why do I even work here, do you see the stress you put me through?? No of course not! Because Doctor Oswalt is just the worst man on the planet!");
+      prompt("Doctor Oswalt is his name, maybe that could be of use to you... Do you sit and 'listen to him' rant? Or quickly 'run for it' while he is pacing around?");
+    } else if (reasonWith === "fight") {
+      alert("Doctor: Let you go? HA! Just casually turn my back and let you go? No, I could lose my job doing that! Now lets get this over with... 'Im singing in the rain, just singing in the rain. What a glorious feeling! Im happy again, Im laughing at clouds! So dark up above, the suns in my heart and Im ready for love!' Name that tune!");
+      var fightHim = prompt("Doctor: Clearly I am quoting a song, what song is it? 1. 'Singing in the Rain by Gene Kelly'? or 2.'My Name Is by Eminem'? If you guess it right you can give me one swing to the head!");
+    }
+
+    if (fightHim === "Singing in the Rain by Gene Kelly") {
+      alert("Doctor: Good god man! You got it correct! Congratulations my good sir! You now have earned yourself a free swing at my cranium, uhmmm here! Take this crowbar!");
+      var takingTheSwing = prompt("The Doctor seems to have a strange grin on his face, do you wined back and swing very hard at his 'head'? Or go for a 'leg'?");
+    } else if (fightHim === "My Name Is by Eminem") {
+      alert("Doctor: Congrats! You have now successfully given me no hope in humanity, how could you possibly think that those were Eminem lyrics?! -grabs your neck and vigorously starts to shake your head and slam it into the floor- LETS JUST BASH YOUR HEAD OPEN NOW! THAT WAY WE CAN SEE JUST HOW SMALL YOUR BRAIN MUST BE AFTER ANSWERING A QUESTION SO EASY AND YET BE SO WRONG! AGH!");
+      alert("Well, way to go... You didn't even make it to the Doctors office for your examination. Instead you failed the trivia based on his favorite song and he decided to kill you slowly and painfully. Maybe you should study up on that song?");
+    }
+
+    if (takingTheSwing === "head") {
+      alert("The doctor expected you to take the swing like that! Doctor: HA! Nice try knocking me out! No more the reason to see what goes on in that head of yours!");
+      alert("The Doctor has knocked you out and now you awake upside down in his office, how could you put yourself in this situation? Brain examination is now in progress!");
+    } else if (takingTheSwing === "leg") {
+      alert("Wow! Way to catch him off guard! He expected you to go for his head and wasn't ready for that mighty swing to the leg!");
+      var windowOrLibrary = prompt("Time to make a run for it! Do you run to the 'library' or do you jump out the 'window'?");
+    }
+
+    if (cafeteriaDoorsOrLibrary === "locate the library") {
+      alert("The library is located in the room directly above you, access the ladder to your right to enter the library. By the way! When there are THREE strikes in a baseball game and you have two strikes sometimes the THIRD ONE is a HOME RUN!");
+      alert("Hmph, that was quite the off topic thing to read... Or was it? Either way time to go into the library!");
+      libraryControlRoom = prompt("You are in the library now! The first thing you notice is a set of levers... there are THREE in fact. Do you pull 'lever one', 'lever two' or 'lever three'?");
+    } 
+
+ if (cafeteriaDoorsOrLibrary === "unlock cafeteria doors and main hall doors") {
+      alert("The doors are now unlocked to the cafeteria and the main hall door is unlocked leading outside!");
+      var talkingOrRunning = prompt("BUT WAIT... That loud banging behind the cafeteria doors was being made by a group of crazed patients trapped in there!!! They are trying to tackle you! Do you try and 'talk your way out of this' attempting to bring them with or 'try to make your escape leaving them in the dust'?");
+    }
+
+    if (talkingOrRunning = "talk your way out of this") {
+      alert("Did you really try to reason with these lunatics??");
+      alert("Oh god... They are holding you down and taking turns stabbing you with eating utensils... You fool! You have not made it out alive... I am sorry.");
+    } else if (talkingOrRunning = "try to make your escape leaving them in the dust") {
+      alert("OH NO!!!");
+      alert("One of the patients clubbed you in the back of the head with a meat tenderizer! You now lay on the floor seizing as the patients begin to hack away at your body...");
+    }
+
+
+
+   
+  }
+  
+
+
+
+    
+
+
+  
+    
+   
+      
+   
+
+   
+     
+            
+  
+  
+
+
+</script>
+  </body>
+</html>
+
